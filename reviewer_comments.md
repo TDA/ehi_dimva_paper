@@ -20,5 +20,24 @@ on the web" -> "vulnerabilities on the web"; p.4: "be allow" -> "allow"; p.6:
 overall"; p.8: "CMS'" -> "CMSes"; several times: "alexa" -> "Alexa"
 
 Reviewer 2
-- 
+-
 
+- E-mail -> email 
+- some text is smaller than the rest, like “tobozo” and email addresses.
+- Text in multiple places goes out of bounds, like in Section 2.3
+- In Figure 1 the term “URLs” is used instead of websites. For example,
+there are no URLs that have forms.
+- to header -> To header
+- [7] gives a 404 HTTP error
+
+Reviewer 3
+-
+
+- Section 4.3.2 could be a bit more detailed. While the choice of languages is
+interesting, it would have also been interesting to see whether the
+vulnerabilities could be associated to popular or outdated software projects.
+E.g. a certain Wordpress plugin that is vulnerable or a certain version of a
+popular blog or e-commerce software. - Interestingly, I remember some version of the paper containing this exact thing.
+
+- ~~Some sentences were hard to read for me due to some grammar issues. The paper
+could benefit from proof reading by a native English speaker.~~ Uhm, sure, lol. Says the guy who wrote "associated to" right above. :\

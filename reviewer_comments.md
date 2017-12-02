@@ -27,7 +27,7 @@ Reviewer 2
 - Text in multiple places goes out of bounds, like in Section 2.3
 - In Figure 1 the term “URLs” is used instead of websites. For example,
 there are no URLs that have forms.
-- to header -> To header
+- ~~to header -> To header~~
 - [7] gives a 404 HTTP error
 
 Reviewer 3

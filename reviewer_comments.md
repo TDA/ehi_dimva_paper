@@ -10,7 +10,7 @@ body of the paper, or omitted altogether.
 - ~~Figures 2 and 3 convey identical information, so one of them can be omitted.~~
 
 - Section 3.2.1 is far too large (to the point of being self-referential), and
-ought to be divided into smaller sub-sections.
+ought to be divided into smaller sub-sections. - PARTIALLY DONE. Split into 2 adn removed self references, not sure if enough.
 
 - ~~Section 6 contains what appears to be a phantom footnote (2).~~ DONE.
 

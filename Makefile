@@ -1,4 +1,4 @@
-DOC = dimva_paper.tex
+DOC = sec_sac_paper.tex
 DOC_BASE := $(shell basename $(DOC) .tex)
 LATEX = pdflatex
 BIBTEX = bibtex

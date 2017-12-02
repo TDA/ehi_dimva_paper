@@ -54,8 +54,8 @@ We created four different malicious payloads. Each of these payloads
 is crafted for a particular use case. The four payloads are:
 (1) nuser\#@example.com\textbackslash{}n\-bcc:\-maluser\-\#\-@example.com,
 (2) nuser\#@\-example.com\textbackslash{}n\-bcc:\-maluser\-\#\-@example.com\textbackslash{}n\-x-check:in,
-(3) nuser\#@\-example.com\textbackslash{}r\textbackslash{}n\-bcc:\-maluser\#\-@example.com,
-and (4) nuser\#\-@example.com\-\textbackslash{}r\textbackslash{}n\-bcc:\-maluser\#\-@example.\-com\textbackslash{}r\textbackslash{}n\-x-check:in.
+(3) nuser\#\-@\-example.com\textbackslash{}r\textbackslash{}n\-bcc:\-maluser\#\-@example.com,
+and (4) nuser\#\-@-\break example.com\-\textbackslash{}r\textbackslash{}n\-bcc:\-maluser\#\-@example.\-com\textbackslash{}r\textbackslash{}n\-x-check:in.
 	
 Payload 1 is the most minimal payload: it injects a newline character followed by the \texttt{bcc} field. Payload 2 contains the additional \texttt{x-check} header to inject Python-based web applications. Payloads 3 and 4 are added for purposes of cross-platform fuzzing: \texttt{\textbackslash{}r\textbackslash{}n} is the ``Carriage Return - Line Feed (CRLF)'' used on Windows systems~\cite{rfc2616}. The \# are replaced by an id, for mapping to the forms.
 

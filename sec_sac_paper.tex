@@ -23,7 +23,8 @@
 % for title caps
 \usepackage{titlecaps}
 \Addlcwords{and, the, or, of, that, our, by, a, prevent, for}
-\settopmatter{printacmref=false, printccs=true, printfolios=true} % We want page numbers on submissions
+% We dont need page numbers according to https://www.sigapp.org/sac/sac2018/authorkit/author-kit-2018.pdf
+\settopmatter{printacmref=false, printccs=true, printfolios=false}
 
 
 % default options for listings
@@ -143,8 +144,6 @@
 %% }
 %% \email{$^\ddag$\{saipc, zzhao30, doupe, ahn\}@asu.edu}
 
-
-%% TODO: Q for Adam, Do we need to condense this?
 %% \author{Sai Prashanth Chandramouli}
 %% \affiliation{%
 %% 	\institution{Arizona State University}
@@ -188,15 +187,32 @@
 %% }
 %% \email{gahn@asu.edu}
 
-%% TODO: Q for Adam, is this the right way?
-% The default list of authors is too long for headers}
 \renewcommand{\shortauthors}{S. Chandramouli, P. Bajan, C. Kruegel, G. Vigna, Z. Zhao, A. Doup\'e, and G. Ahn}
 
 
 \renewcommand{\email}{e-\nobreak{}mail\xspace}
 \input{abstract}
 
-\keywords{}
+\begin{CCSXML}
+	<ccs2012>
+	<concept>
+	<concept_id>10002978.10003022</concept_id>
+	<concept_desc>Security and privacy~Software and application security</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	<concept>
+	<concept_id>10002978.10003022.10003026</concept_id>
+	<concept_desc>Security and privacy~Web application security</concept_desc>
+	<concept_significance>500</concept_significance>
+	</concept>
+	</ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Security and privacy~Software and application security}
+\ccsdesc[500]{Security and privacy~Web application security}
+
+
+\keywords{E-mail Injection, Header Injection}
 
 \maketitle
 

@@ -27,10 +27,10 @@ When this code is given the malicious input
 \texttt{\lstinline{abc@example.com\\nCC:spc@example.com}} as the value
 of the \texttt{\$\_REQUEST[\textquotesingle email\textquotesingle]},
 it generates the equivalent SMTP Headers shown in
-Listing~\ref{code:smtpheaders}. It can be seen that the \texttt{CC}
+Listing~\ref{code:smtpheaders}. It can be seen that the \lstinline{CC}
 (carbon copy) header that we injected appears as part of the resulting
 SMTP message. This will make the e-mail get sent to the e-mail address
-specified as part of the \texttt{CC} as well.
+specified as part of the \lstinline{CC} as well.
 
 %\input{Background/history_table}
 \end{sloppypar}

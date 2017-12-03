@@ -32,12 +32,12 @@
         \end{table}
 %        \end{wraptable}
 
-		Thus, our system will not see dynamically injected forms and hence is unable to detect if \ehi vulnerabilities are present in these forms. The workaround would be to use a JavaScript engine to query for the \texttt{document.getElementsByTagName('html')[0].innerHTML} (from inside web browser automation tools such as Selenium), then use that as the source HTML. 
+		Thus, our system will not see dynamically injected forms and hence is unable to detect if \ehi vulnerabilities are present in these forms. The workaround would be to use a JavaScript engine to query for the \lstinline{document.getElementsByTagName('html')[0].innerHTML} (from inside web browser automation tools such as Selenium), then use that as the source HTML. 
 		
 		A comparison of the running times between the different approaches is shown in Table~\ref{tab:perf}. We chose not to use Selenium as it results in a slowdown of \slowSelenium. 
 
 
-        Because we search for the words \texttt{e-mail}, \texttt{mail}, or \texttt{email} within the HTML form, if the website does not use English names for its forms, our system will not be able to find the presence of an \email field. An example is by using the French word for \texttt{e-mail}---courrier {{\'e}}lectronique--- our system is unable to find the presence of the e-mail field. 
+        Because we search for the words \lstinline{e-mail}, \lstinline{mail}, or \lstinline{email} within the HTML form, if the website does not use English names for its forms, our system will not be able to find the presence of an \email field. An example is by using the French word for \lstinline{e-mail}---courrier {{\'e}}lectronique--- our system is unable to find the presence of the e-mail field. 
         
 		During the crawl, our system was blacklisted by a few web
         applications (mostly WordPress ones), and Internet Service
@@ -55,7 +55,7 @@
 
         The parser that we use for HTML parsing---Beautiful Soup---does not parse heavily malformed HTML and throws an exception on encountering such HTML. Thus, we have designed the system to exit gracefully on such occasions. A side-effect of this is that our system is unable to test web applications with very bad HTML markup.
 
-        Black-box testing is highly beneficial as explained in Section~\ref{sys:appr}, however it also has a drawback in that we cannot verify whether the reported vulnerability exists in the source code or is a feature of the website (e.g., the website allows users to send bulk e-mail, adding many \texttt{cc} or \texttt{bcc} headers). We must manually notify the developers to get this feedback.
+        Black-box testing is highly beneficial as explained in Section~\ref{sys:appr}, however it also has a drawback in that we cannot verify whether the reported vulnerability exists in the source code or is a feature of the website (e.g., the website allows users to send bulk e-mail, adding many \lstinline{cc} or \lstinline{bcc} headers). We must manually notify the developers to get this feedback.
 
 %%        	As discussed in Section~\ref{Comp:EMFC}, we only search for the words \texttt{email}, \texttt{mail} or \texttt{e-mail} (case insensitive) inside the forms to detect the presence of e-mail fields, instead of searching for an \colorbox{lightgray}{\lstinline{<input type = email>}}. This might result in a false positive in certain forms, like the one shown in Listing~\ref{code:false_positive}.
 

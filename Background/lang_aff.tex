@@ -9,7 +9,7 @@ version is 7.1), the \texttt{mail()} function is yet to be fixed after
 A working code sample with the vulnerability is shown in  Listing~\ref{code:phpemi}.
 
 \begin{sloppypar}
-A bug was filed about an \ehi vulnerability in Python's implementation of the \texttt{email.header} library and the header parsing functions allowing newlines in early 2009, which was followed by a partial patch in 2011.
+A bug was filed about an \ehi vulnerability in Python's implementation of the \lstinline{email.header} library and the header parsing functions in early 2009, which was followed by a partial patch in 2011.
 \end{sloppypar}
 
 Unfortunately, the bug fix was only for the \lstinline{email.header} package, and not for other frequently used packages such as\- \lstinline{email.parser}, where both the classic \lstinline{Parser()} and the newer \lstinline{FeedParser()} contain \ehi vulnerabilities even in the latest versions: \lstinline{2.7.11} and \lstinline{3.5}. The bug fix was also not backported to older versions of Python.
